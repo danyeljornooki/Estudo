@@ -396,24 +396,85 @@ while(y < lista_frutas.length){
     y++
 }
 
-
+// -------Tabuada----------
 for (let y = 1; y <= 10; y++) {
-    
-for (let x = 1; x <= 10; x++) {
-    document.write(y + ' X ' + x + ' = ' + (y * x) + '<br>')
-    
+
+    for (let x = 1; x <= 10; x++) {
+        document.write(y + ' X ' + x + ' = ' + (y * x) + '<br>')
+
+    }
+    document.write('<hr>')
 }
-document.write('<hr>')
-}
+
+// ---------for in----------
 
 // for in mais usado em indices não ordenados
 
 var lista_convidados = ['Jorge', 'ana', 'danyue', 'adsad']
 
 for(var x  in lista_convidados){
-    console.log('Índice ' + x + ' Valor ' + lista_convidados[x]);
-    
+console.log('Índice ' + x + ' Valor ' + lista_convidados[x]);
+ 
 }
+
+// ---------foreach-------
+
+// var listaFuncionarios = ['Viviane', 'Rosângela', 'Miguel', 'Lucas', 'Fernanda']
+var listaFuncionarios = Array()
+listaFuncionarios['x'] = 'Viviane'
+listaFuncionarios[false] = 'Rosângela'
+listaFuncionarios[3] = 'Miguel'
+listaFuncionarios[27] = 'Lucas'
+listaFuncionarios[-12] = 'Fernanda'
+//forEach começa a partir de 0 (cuidado!!!)
+
+var f = function(valor, indice){
+    console.log(valor, indice)
+}
+
+listaFuncionarios.forEach(f)
+
+// listaFuncionarios.forEach(function(valor, indice, array) {
+//   //logica
+//   console.log('indice ' + indice + ' | valor:' + valor)
+//   if(valor === 'Lucas'){
+//     array[indice] = 'Um novo valor'
+//   }
+//   console.log(array)
+// })
+
+// try, catch, throw e finally
+
+//netflix
+
+    
+    var video = Array()
+
+    video[1] = Array()
+    video[1]['nome'] = 'Fullmetal Alchemist'
+    video[1]['categoria'] = 'Anime'
+
+    function getVideo(video){
+
+      try {
+      //lógica
+      //http
+      console.log(video[0]['nome'])
+      } catch(erro) {
+        tratarErro
+        console.log('Agora sim podemos tratar esse erro')
+        throw new Error('Houve um erro mas não se preocupe, estamos trabalhando nisso agora!')
+      } finally {
+        console.log('Sempre passa por aqui (try / catch)')
+      }
+
+      console.log('A aplicação não morreu')
+    }
+    function tratarErro(e){
+      console.log(e)
+    }
+    getVideo(video)
+
 
 */
 
