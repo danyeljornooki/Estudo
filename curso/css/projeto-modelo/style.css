@@ -1,0 +1,43 @@
+ body{
+    background: #d2d2c1 url(./img/fundo.png);
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+ }
+
+a{
+    text-decoration: none;
+    color: #4b566a;
+    padding-inline: 5px;
+}
+
+ #principal{
+    width: 900px;
+    margin: auto;
+ }
+
+ #menu{
+    background-color: #c5c5b2;
+    padding: 1.8rem;
+    font-weight: 700;
+ }
+
+ #conteudo{
+    background: #e8e8d9;
+    padding: 10px;
+ }
+
+ #rodape{
+    text-align: center;
+ }
+
+ #campanha{
+   text-align: center;
+ }
+
+ .img-campanha{
+   border: 10px solid #c3c3ae;
+ }
+
+ .centralizar{
+   text-align: center;
+ }
